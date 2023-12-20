@@ -41,7 +41,7 @@ class RpiRTCController:
         try:
             rtc = rtc_device.read_datetime()
         except Exception:
-            print("Модуль не обнаружен")
+            print("Modele not found")
             return None
 
         return [rtc.hour,
